@@ -5,6 +5,7 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/m7/overlay
 
 # Inherit common product files.
 $(call inherit-product, vendor/xenonhd/config/common.mk)
+$(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/xenonhd/config/nfc_enhanced.mk)
