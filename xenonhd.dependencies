@@ -1,26 +1,22 @@
 [
   {
-    "remote": "th",
-    "repository": "android_device_htc_m7-common",
+    "repository": "TeamHorizon/android_device_htc_m7-common",
     "target_path": "device/htc/m7-common",
-    "revision": "n"
+    "branch": "n"
   },
   {
-    "remote": "th",
-    "repository": "android_device_htc_msm8960-common",
+    "repository": "TeamHorizon/android_device_htc_msm8960-common",
     "target_path": "device/htc/msm8960-common",
-    "revision": "n"
+    "branch": "n"
   },
   {
-    "remote": "th",
-    "repository": "proprietary_vendor_htc",
+    "repository": "TeamHorizon/proprietary_vendor_htc",
     "target_path": "vendor/htc",
-    "revision": "mm"
+    "branch": "n"
   },
   {
-    "remote": "th",
-    "repository": "android_kernel_htc_msm8960",
+    "repository": "TeamHorizon/android_kernel_htc_msm8960",
     "target_path": "kernel/htc/msm8960",
-    "revision": "n"
+    "branch": "n"
   }
 ]

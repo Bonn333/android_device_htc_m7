@@ -1,18 +1,17 @@
+# Inherit from those products. Most specific first.		
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from m7-common
+$(call inherit-product, device/htc/m7-common/m7-common.mk)
+
+# Inherit full phone configuration
+$(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
+
+# Get non-open-source specific aspects		
+$(call inherit-product, vendor/htc/m7/m7-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/htc/m7/overlay
-
-# Inherit common product files.
-$(call inherit-product, vendor/xenonhd/config/common.mk)
-$(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
-
-# Enhanced NFC
-#$(call inherit-product, vendor/xenonhd/config/nfc_enhanced.mk)
-
-
-# Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/htc/m7/m7-vendor.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_BRAND := htc
@@ -20,9 +19,6 @@ PRODUCT_DEVICE := m7
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_MODEL := One
 PRODUCT_NAME := xenonhd_m7
-
-# Inherit from m7-common
-$(call inherit-product, device/htc/m7-common/m7-common.mk)
 
 # Override build props
 ifneq ($(SIGN_BUILD),true)
