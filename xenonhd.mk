@@ -8,7 +8,11 @@ $(call inherit-product, vendor/xenonhd/config/common.mk)
 $(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/xenonhd/config/nfc_enhanced.mk)
+#$(call inherit-product, vendor/xenonhd/config/nfc_enhanced.mk)
+
+
+# Get non-open-source specific aspects
+$(call inherit-product-if-exists, vendor/htc/m7/m7-vendor.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_BRAND := htc
