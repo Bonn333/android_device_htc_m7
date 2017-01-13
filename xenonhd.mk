@@ -20,6 +20,8 @@ PRODUCT_MANUFACTURER := HTC
 PRODUCT_MODEL := One
 PRODUCT_NAME := xenonhd_m7
 
+PRODUCT_PROPERTY_OVERRIDES += ro.xenonhd.maintainer=ljjehl
+
 # Override build props
 ifneq ($(SIGN_BUILD),true)
 PRODUCT_BUILD_PROP_OVERRIDES += \
