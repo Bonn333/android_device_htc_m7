@@ -13,6 +13,9 @@ $(call inherit-product, vendor/htc/m7/m7-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/htc/m7/overlay
 
+#enable SuperSU
+WITH_SUPERSU := true
+
 # Set those variables here to overwrite the inherited values.
 PRODUCT_BRAND := htc
 PRODUCT_DEVICE := m7
