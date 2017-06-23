@@ -15,6 +15,12 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/m7/overlay
 
 #enable SuperSU
 WITH_SUPERSU := true
+ROOT_METHOD=magisk
+
+PRODUCT_PACKAGES += \
+    AdAway \
+    KernelAdiutor \
+    MiXplorer
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_BRAND := htc
